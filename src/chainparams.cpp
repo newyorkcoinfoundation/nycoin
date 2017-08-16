@@ -131,18 +131,10 @@ public:
         assert(genesis.hashMerkleRoot == uint256("0x2bad42ac6e0ccc4808d8df0fd50ac8634eea335b1412b1ef52864b430a87b262"));
 
         // todo add more dns seeders
-        vSeeds.push_back(CDNSSeedData("34.211.116.234", "34.211.116.234"));
-		vSeeds.push_back(CDNSSeedData("45.79.186.226", "45.79.186.226"));
-		vSeeds.push_back(CDNSSeedData("101.161.147.40","101.161.147.40"));
-		vSeeds.push_back(CDNSSeedData("70.49.91.176","70.49.91.176"));
-		vSeeds.push_back(CDNSSeedData("68.129.12.246","68.129.12.246"));
-		vSeeds.push_back(CDNSSeedData("76.95.178.229","76.95.178.229"));
-		vSeeds.push_back(CDNSSeedData("75.159.74.145","75.159.74.145"));
-		vSeeds.push_back(CDNSSeedData("189.54.186.95","189.54.186.95"));
-		vSeeds.push_back(CDNSSeedData("73.190.146.27","73.190.146.27"));
-		vSeeds.push_back(CDNSSeedData("192.3.198.7","192.3.198.7"));
-		vSeeds.push_back(CDNSSeedData("178.151.61.164","178.151.61.164"));
-		vSeeds.push_back(CDNSSeedData("60.225.51.223","60.225.51.223"));
+        vSeeds.push_back(CDNSSeedData("162.144.221.212","162.144.221.212"));
+		vSeeds.push_back(CDNSSeedData("34.213.47.235","34.213.47.235"));
+		vSeeds.push_back(CDNSSeedData("45.79.186.226","45.79.186.226"));
+
         
         base58Prefixes[PUBKEY_ADDRESS] = list_of(60);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(22);
