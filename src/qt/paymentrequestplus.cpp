@@ -99,11 +99,6 @@ bool PaymentRequestPlus::getMerchant(X509_STORE* certStore, QString& merchant) c
     const QDateTime currentTime = QDateTime::currentDateTime();
     for (int i = 0; i < certChain.certificate_size(); i++) {
         QByteArray certData(certChain.certificate(i).data(), certChain.certificate(i).size());
-        QSslCertificate qCert(certData, QSsl::Der);
-        if (currentTime < qCert.effectiveDate() || currentTime > qCert.expiryDate()) {
-            qWarning() << "PaymentRequestPlus::getMerchant : Payment request: certificate expired or not yet active: " << qCert;
-            return false;
-        }
 #if QT_VERSION >= 0x050000
         if (qCert.isBlacklisted()) {
             qWarning() << "PaymentRequestPlus::getMerchant : Payment request: certificate blacklisted: " << qCert;
